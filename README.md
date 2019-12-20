@@ -5,14 +5,14 @@ Shortens URLs
 ## Inputs
 
 ### `url`:
-**Required ** 'URL to shorten'
+**Required** 'URL to shorten'
+
 ## Outputs
+
 ### `short_url`
 The short URL
 
 ## Example usage
-
-### Example 1: Shorten the compare URL
 
 ```yaml
 on: [push]
