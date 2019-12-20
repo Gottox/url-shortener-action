@@ -5,7 +5,7 @@ Shortens URLs
 ## Inputs
 
 ### `url`:
-**Required** 'URL to shorten'
+**Required** URL to shorten
 
 ## Outputs
 
