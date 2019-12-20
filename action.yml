@@ -1,0 +1,17 @@
+name: 'URL Shortener'
+description: |
+  Shortens URLs
+author: 'Enno Boland'
+inputs:
+  url:
+    description: 'URL to shorten'
+    required: true
+outputs:
+  short_url:
+    description: 'The short URL'
+runs:
+  using: 'node12'
+  main: 'app.js'
+branding:
+  icon: 'minimize-2'
+  color: 'purple'

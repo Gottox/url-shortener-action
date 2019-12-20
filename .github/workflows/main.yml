@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  url_shortener:
+    runs-on: ubuntu-latest
+    name: IRC notifications
+    steps:
+    - name: shortener
+      id: shortener
+      uses: Gottox/url-shortener-action@master
+      with:
+        url: "${{ github.event.compare }}"
+    - name: outputs
+      run: echo "${{ steps.response.outputs.short_url }}"
