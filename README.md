@@ -20,7 +20,7 @@ on: [push]
 jobs:
   url_shortener:
     runs-on: ubuntu-latest
-    name: IRC notifications
+    name: Short URLs
     steps:
     - name: shortener
       id: shortener
@@ -28,5 +28,5 @@ jobs:
       with:
         url: "${{ github.event.compare }}"
     - name: outputs
-      run: echo "${{ steps.response.outputs.short_url }}"
+      run: echo "${{ steps.shortener.outputs.short_url }}"
 ```
