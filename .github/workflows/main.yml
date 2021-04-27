@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: shortener
       id: shortener
-      uses: Gottox/url-shortener-action@master
+      uses: Gottox/url-shortener-action@main
       with:
         url: "${{ github.event.compare }}"
     - name: outputs
